@@ -1,6 +1,9 @@
 const customVideoDescription = document.querySelector('.custom-video-description'),
       prevArrow = document.querySelector('.navigationButton.episode.previousId'),
-      nextArrow = document.querySelector('.navigationButton.episode.nextId');
+      nextArrow = document.querySelector('.navigationButton.episode.nextId'),
+      videoInfoBlock = document.querySelector('.video-info-block'),
+      openCloseToggle = document.querySelector('.openCloseToggle'),
+      toggleBlock = document.querySelector('.toggle-block');
 
 if (customVideoDescription) {
     let scrollWindow = window.scrollY.toFixed(2);
@@ -25,6 +28,14 @@ if (customVideoDescription) {
 
         prevArrowFix();
         nextArrowFix();
+    })
+
+    videoInfoBlock.addEventListener('click', () => {
+        if (openCloseToggle.classList.contains('closed')) {
+            toggleBlock.classList.add('closed');
+        } else {
+            toggleBlock.classList.remove('closed');
+        }
     })
 }
 

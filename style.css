@@ -20,10 +20,13 @@
 
 .toggle-block.d-flex.align-items-center.justify-content-between {
     position: fixed !important;
+    width: 356px !important;
+    transition: right 0.3s !important;
 }
 
 .accordion.video-teacher-info {
     padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .accordion-section.section button {
@@ -32,4 +35,8 @@
 
 .video-info-block-title.d-flex.justify-content-between {
     padding-left: 20px !important;
+}
+
+.toggle-block.d-flex.align-items-center.justify-content-between.closed {
+    right: -357px;
 }

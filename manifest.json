@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Fix Campfire",
+  "short_name": "Fix Campfire",
+  "description": "Поправляет верстку при просмотре видео-урока",
+  "version": "1.0",
+  "author": "vitalii.kravchenko.work@gmail.com",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://campfire-school.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

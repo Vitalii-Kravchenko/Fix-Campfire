@@ -1,0 +1,35 @@
+.episode-section {
+    height: auto !important;
+}
+
+.video-section {
+    height: 75vh !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.custom-video-description {
+    max-height: none !important;
+    overflow: auto !important;
+    overflow-y: auto !important;
+}
+
+.navigationButton.episode.previousId, .navigationButton.episode.nextId {
+    transition: none !important;
+}
+
+.toggle-block.d-flex.align-items-center.justify-content-between {
+    position: fixed !important;
+}
+
+.accordion.video-teacher-info {
+    padding-left: 0 !important;
+}
+
+.accordion-section.section button {
+    padding-left: 20px !important;
+}
+
+.video-info-block-title.d-flex.justify-content-between {
+    padding-left: 20px !important;
+}

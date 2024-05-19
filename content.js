@@ -3,7 +3,8 @@ const customVideoDescription = document.querySelector('.custom-video-description
       nextArrow = document.querySelector('.navigationButton.episode.nextId'),
       videoInfoBlock = document.querySelector('.video-info-block'),
       openCloseToggle = document.querySelector('.openCloseToggle'),
-      toggleBlock = document.querySelector('.toggle-block');
+      toggleBlock = document.querySelector('.toggle-block'),
+      body = document.querySelector('body');
 
 if (customVideoDescription) {
     let scrollWindow = window.scrollY.toFixed(2);
@@ -37,5 +38,24 @@ if (customVideoDescription) {
             toggleBlock.classList.remove('closed');
         }
     })
+
+    function toggleBlockPosition() {
+        if (body.classList.contains('position_mode_bottom')) {
+            toggleBlock.style.cssText = `
+                position: absolute !important;
+            `;
+        } else {
+            toggleBlock.style.cssText = `
+                position: fixed !important;
+            `;
+        }
+    }
+
+    toggleBlockPosition();
+
+    toggleBlock.addEventListener('click', () => {
+        toggleBlockPosition();
+    })
+
 }
 

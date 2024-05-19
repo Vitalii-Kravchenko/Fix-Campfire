@@ -1,3 +1,3 @@
 # Fix Campfire
 
-Version: 1.01
+Version: 1.03

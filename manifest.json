@@ -3,7 +3,7 @@
   "name": "Fix Campfire",
   "short_name": "Fix Campfire",
   "description": "Поправляет верстку при просмотре видео-урока",
-  "version": "1.01",
+  "version": "1.03",
   "author": "vitalii.kravchenko.work@gmail.com",
   "action": {
     "default_popup": "index.html"
